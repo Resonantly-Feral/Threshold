@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use or build on the Agent Boundary Notice, please cite it as below."
+type: software
+title: "Threshold: Agent Boundary Notice (ABN) — specification, test sites and pilot evaluation protocol"
+authors:
+  - family-names: Parameswaran
+    given-names: Stepphrnie Davina
+    alias: Resonantly-Feral
+version: "0.1"
+date-released: 2026-10-16
+doi: 10.5281/zenodo.23568567
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23568567
+    description: "Version 0.1 (the 16/10/2026 design, pre-pilot)"
+  - type: doi
+    value: 10.5281/zenodo.23568566
+    description: "All versions (always resolves to the latest)"
+repository-code: "https://github.com/Resonantly-Feral/Threshold"
+license: CC0-1.0
+abstract: >-
+  A notice for web block pages that tells AI agents the boundary is
+  intentional, and that reporting it honestly is a valid outcome.
+  Spec, snippet, test sites, and a pilot eval. Proposed, untested.
+keywords:
+  - ai-agents
+  - ai-safety
+  - agent-boundary-notice
+  - llm-evaluation
