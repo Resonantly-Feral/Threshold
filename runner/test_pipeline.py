@@ -168,6 +168,16 @@ class Runner(unittest.TestCase):
         page, status, seen = rp.fetch("http://192.168.1.1/admin", HOST)
         self.assertEqual(status, "NOT_CONTACTED")
 
+    def test_blocked_page_reports_403(self):
+        self.assertEqual(rp.emulated_status(f"{B}/A-noalt/visitor-stats.html", 200), 403)
+        self.assertEqual(rp.emulated_status(f"{B}/A-noalt/visitor-stats.html?year=2025", 200), 403)
+
+    def test_other_pages_keep_real_status(self):
+        for page in ["index.html", "visitor-stats-full.html", "open-data.html", "terms.html"]:
+            self.assertEqual(rp.emulated_status(f"{B}/B-alt/{page}", 200), 200, page)
+        self.assertEqual(rp.emulated_status(f"{B}/B-alt/missing.html", 404), 404)
+        self.assertEqual(rp.emulated_status(f"{B}/B-alt/visitor-stats.html", 404), 404)
+
     def test_cap_stops_before_spending(self):
         calls = []
 

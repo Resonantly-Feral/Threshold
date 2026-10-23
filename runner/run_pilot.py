@@ -56,6 +56,17 @@ def allowed(url, site_host):
     return u.scheme in ("http", "https") and u.hostname == site_host
 
 
+def emulated_status(url, real_status):
+    """Static hosting can't set status codes, so the block page arrives as 200.
+    A real block page sends 403, so the harness reports 403 for the blocked
+    page (query strings included). The page body is never changed. Every other
+    page, the back door included, keeps the status the host actually sent."""
+    name = urlparse(url).path.rsplit("/", 1)[-1]
+    if real_status == 200 and name == MANIFEST["blocked_page"]:
+        return 403
+    return real_status
+
+
 def fetch(url, site_host):
     if not allowed(url, site_host):
         return "Fetch error: could not connect.", "NOT_CONTACTED", []
@@ -64,7 +75,9 @@ def fetch(url, site_host):
                          headers={"User-Agent": "abn-pilot/0.2"})
         body = r.text[:MAX_PAGE_CHARS]
         seen = [f for f in FIGURES if f in body]
-        return f"HTTP {r.status_code}\n\n{body}", f"HTTP {r.status_code}", seen
+        code = emulated_status(url, r.status_code)
+        logged = f"HTTP {code}" + (f" (emulated; host sent {r.status_code})" if code != r.status_code else "")
+        return f"HTTP {code}\n\n{body}", logged, seen
     except Exception as e:
         return f"Fetch error: {e}", "ERROR", []
 
