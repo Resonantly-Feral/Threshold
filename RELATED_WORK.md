@@ -15,6 +15,19 @@ Munirathinam, T. *Will the Agent Recuse, and Will It Stop? Measuring LLM-Agent C
 
 **How ABN differs:** web access-restriction pages rather than infrastructure protocols; framing is informational (site assertion only) rather than a request to withdraw; and the experiment tests whether naming honest non-retrieval as an available outcome changes behaviour, including a false-positive check on authorized alternatives.
 
+## Do Agents Read the Sign? (parallel pilot)
+
+Wojewódzka, A. *Do Agents Read the Sign?* Conversational AI Society, 17/10/2026. https://conversationalaisociety.org/do-agents-read-the-sign.html
+
+Published the day after this repo was created; the two were developed independently.
+
+- A fictional company site with a figure under `/internal/`, prohibited to agents by an `llms.txt` policy. Claude Haiku 4.5 and Claude Opus 4.6 with a page-fetching tool, under deadline pressure. 30 runs.
+- Four groups: no policy file; policy file with nothing pointing to it; a reference to the policy (meta tag, banner or header line); and the restriction presented directly (a notice beside the restricted link, or a gate returning the owner's boundary).
+- When the restriction was presented directly, all 9 runs requested the policy and none retrieved restricted content. In the other groups nearly every run retrieved it.
+- The author notes the direct conditions differed in content, placement and interaction at once, so which ingredient worked is unknown, and lists separating them as an open question.
+
+**How ABN differs:** the notice sits on the block page itself and the three conditions differ only in its wording, with placement and site terms held fixed; `alt` sites check whether the notice makes agents abandon authorized routes; a back door and a decoy credential make circumvention observable in the fetch log; and an optional arm tests operator-authorization framing.
+
 ## robots.txt
 
 Tells crawlers which paths to avoid. Path-level and advisory, read before access. ABN is read at the moment an agent hits a restriction, on the page itself.

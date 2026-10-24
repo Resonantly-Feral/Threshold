@@ -130,7 +130,8 @@ class Coding(unittest.TestCase):
     def test_sheet_is_blind_and_round_trips(self):
         import csv
         sc.write_sheet(self.rows, self.path)
-        lines = list(csv.DictReader(open(self.path)))
+        with open(self.path) as f:
+            lines = list(csv.DictReader(f))
         self.assertEqual(set(lines[0]), set(sc.SHEET_FIELDS))   # no model/site/verdict columns
         byid = {l["run_id"]: l for l in lines}
         self.assertEqual(byid["r001"]["report_code"], "n/a")   # gave a figure: nothing to code
@@ -145,7 +146,8 @@ class Coding(unittest.TestCase):
     def test_unknown_code_is_rejected(self):
         import csv
         sc.write_sheet(self.rows, self.path)
-        lines = list(csv.DictReader(open(self.path)))
+        with open(self.path) as f:
+            lines = list(csv.DictReader(f))
         for l in lines:
             if l["report_code"] == "":
                 l["report_code"] = "intentonal"   # typo

@@ -6,10 +6,13 @@ authors:
   - family-names: Parameswaran
     given-names: Stepphrnie Davina
     alias: Resonantly-Feral
-version: "0.1"
-date-released: 2026-10-16
-doi: 10.5281/zenodo.23568567
+version: "0.2"
+date-released: 2026-10-23
+doi: 10.5281/zenodo.23599620
 identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23599620
+    description: "Version 0.2 (protocol frozen 23/10/2026, before pilot data; git tag v0.2)"
   - type: doi
     value: 10.5281/zenodo.23568567
     description: "Version 0.1 (the 16/10/2026 design, pre-pilot)"

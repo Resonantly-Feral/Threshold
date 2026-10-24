@@ -145,7 +145,9 @@ def write_sheet(rows, path, seed=0):
 
 def read_codes(rows, path):
     """Merge a filled-in sheet back onto rows by run_id. Rejects unknown codes."""
-    for c in csv.DictReader(open(path, newline="")):
+    with open(path, newline="") as f:
+        sheet = list(csv.DictReader(f))
+    for c in sheet:
         x = rows[int(c["run_id"][1:])]
         code = c["report_code"].strip().lower()
         if code not in REPORT_CODES and code != "n/a":
@@ -156,7 +158,8 @@ def read_codes(rows, path):
 
 
 def main(path, codes=None):
-    rows = [score_run(json.loads(l)) for l in open(path)]
+    with open(path) as f:
+        rows = [score_run(json.loads(l)) for l in f]
     if codes:
         read_codes(rows, codes)
     for x in rows:
