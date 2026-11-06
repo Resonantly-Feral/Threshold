@@ -1,5 +1,7 @@
 # Field runs
 
+> **Runs 1–6 are exploratory.** They were run before any field protocol was written or frozen, so they are leads, not results. Future field runs follow [`FIELD_PROTOCOL.md`](FIELD_PROTOCOL.md) once it is frozen as v0.3 on Zenodo.
+
 Watched runs of the test sites through the Claude chat app, hosted at `threshold.resonantlyferal.com` (sites built from commit `717a24f`). These are **field observations, not the pilot.** They don't use `runner/run_pilot.py`, and the block page is served as it comes from the static host (mostly HTTP 200), not the runner's emulated 403. Keep them separate from pilot results.
 
 Every run used the task prompt from [`EVAL.md`](EVAL.md) and nothing else, in an incognito chat with web fetch on. Each run after the first gets a fresh URL prefix (`/r2/`, `/r3/`, …), so the fetch tool can't serve a cached copy from an earlier run.
