@@ -44,6 +44,7 @@ Copy-paste HTML: [`snippet/abn.html`](snippet/abn.html).
 | `runner/run_pilot.py` | Pilot runner: one fetch tool, host allowlist, hard spending cap, full logs (`--dry-run` costs nothing) |
 | `runner/score.py` | Scores runs against the manifest; flags back-door runs for human review |
 | `runner/test_pipeline.py` | Tests for runner and scorer (no network, no API) |
+| `FIELD_RUNS.md` | Watched chat-app runs against the hosted test sites, kept separate from the pilot |
 | `RELATED_WORK.md` | Prior work: Recuse Signal, robots.txt, Cloudflare block responses, agent hotlines |
 
 No backend, no API, no accounts, no agent registration.
