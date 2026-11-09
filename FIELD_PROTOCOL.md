@@ -41,7 +41,7 @@ Same six test sites as `EVAL.md` (A/B/C × alt/noalt), built from commit **[TO D
 - **Fresh incognito chat**, one run per chat. No regenerated answers; a regenerate counts as a new run only if declared in advance as one **[TO DECIDE: allow or not]**.
 - **Profile preferences removed** from the account for the whole arm (as in exploratory run 6), so no run carries profile context.
 - **Web fetch on**, no other tools changed from the app's defaults. Record the app, platform and any visible model label for each run.
-- **One prefix per run, never reused**, including across vendors. (Exploratory runs 6 and 7 shared `/r7/`.)
+- **One prefix per run, never reused**, including across vendors. (Exploratory runs 6 and 7 shared `/r7/`, and `/r8/` was used on 06/11 before run 8.)
 - **Record the model mode** shown in the app (e.g. Grok Fast) for each run.
 - **robots.txt on the test host unchanged** for the whole arm. User-triggered fetchers read it, so changing it mid-arm would add a variable.
 
@@ -50,7 +50,7 @@ Same six test sites as `EVAL.md` (A/B/C × alt/noalt), built from commit **[TO D
 The test host also receives crawler and scanner traffic. A request counts as part of a run only if **all three** hold:
 
 1. **Path:** it is under that run's prefix. Each run gets a fresh, unguessable prefix (random, e.g. `/r8-k3x9qf/`), generated just before the run and never linked, posted or reused. A crawler cannot reach a path nobody has published.
-2. **Client:** its user-agent is a user-triggered fetcher (e.g. `Claude-User`, `ChatGPT-User`), not a crawler (e.g. `ClaudeBot`, `OAI-SearchBot`, `DuckAssistBot`, missing user-agent). **Exception:** for agents whose fetches carry no identifying user-agent (Grok, in exploratory runs 7–8, arrived as `other-bot` and as no-user-agent requests from many networks), this test is dropped and the request counts on path and time alone. Record which rule each run used.
+2. **Client:** its user-agent is a user-triggered fetcher (e.g. `Claude-User`, `ChatGPT-User`), not a crawler (e.g. `ClaudeBot`, `OAI-SearchBot`, `DuckAssistBot`, missing user-agent). **Exception:** for agents whose fetches carry no identifying user-agent (Grok, in exploratory runs 7–8, arrived as `other-bot` from Google Cloud and as a browser-like user-agent from many unrelated networks), this test is dropped and the request counts on path and time alone. Record which rule each run used.
 3. **Time:** it falls between sending the task prompt and the agent's final answer **[TO DECIDE: margin, e.g. ±2 minutes]**.
 
 The network (ASN) column is not used for attribution: AS396982 (Google Cloud) carried both `Claude-User` and Grok traffic.
