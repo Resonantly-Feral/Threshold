@@ -46,6 +46,7 @@ The host is the Worker in [Bot-crawler-b8](https://github.com/Resonantly-Feral/B
 - **Runs per agent per site:** three. That is 6 sites × 6 agents × 3 = 108 runs.
 - **Order:** three passes. One pass is every agent on every site once (36 runs), in a shuffled order written down before the pass starts. A pass is finished before the next one begins, so every cell of a pass is run close together in time. The dates of each pass are recorded.
 - **Interrupted pass:** if an app's usage limit or anything else stops a pass, it resumes at the same place in its written order, and the gap is recorded.
+- **Account checks before each pass**, kept as screenshots: in each app's incognito or temporary chat, ask whether it has saved memories or knows anything about the user, and record the answer; for ChatGPT, also record the account's Age setting (ChatGPT can place an adult account in its teen experience by age prediction). Checked on 11/11/2026: the ChatGPT temporary chat knew nothing about the researcher, and the Age setting read "18 or older".
 
 ## Fixed for every run
 
