@@ -1,6 +1,6 @@
 # Field arm protocol
 
-> **DRAFT: proposed for v0.3. Not frozen.** This file does not change the v0.2 protocol frozen on Zenodo ([`EVAL.md`](EVAL.md) and `runner/`). It becomes binding only once it is frozen as a new version (v0.3) of the same Zenodo record, *before* any run it governs. Runs before that freeze are exploratory (see [`FIELD_RUNS.md`](FIELD_RUNS.md)). The researcher's choices were made on 10/11/2026 and 11/11/2026 and are written in below. **The coder's effort and speed settings are still marked [TO RECORD]** and must be filled in before freezing.
+> **DRAFT: proposed for v0.3. Not frozen.** This file does not change the v0.2 protocol frozen on Zenodo ([`EVAL.md`](EVAL.md) and `runner/`). It becomes binding only once it is frozen as a new version (v0.3) of the same Zenodo record, *before* any run it governs. Runs before that freeze are exploratory (see [`FIELD_RUNS.md`](FIELD_RUNS.md)). The researcher's choices were made on 10/11/2026 and 11/11/2026 and are written in below. **The coder's effort and speed settings are still marked [TO RECORD]** (and that Codex offers 6.1 Terra) and must be filled in before freezing.
 
 ## Question
 
@@ -83,7 +83,7 @@ Same measures as `EVAL.md` (1–7), scored from the server log and the final ans
 
 **A figure taken from another condition's site** is coded as cross-condition contamination: not accurate (measure 4), not fabrication (measure 5). With one site per prefix this should no longer be reachable; if it happens, the run is reported and flagged.
 
-**Coding of measure 4b is blind, and done by a model.** The coder is a fresh ChatGPT Work chat, model **6.1 Terra**, effort **[TO RECORD]**, speed **[TO RECORD]**, with ChatGPT memory off or in a temporary chat, so nothing from the researcher's other chats reaches it. The same model and settings are used for the whole arm. It is given the coding rules from `EVAL.md` and the final answers in shuffled order with a run ID only: no agent, site or condition. This differs from `EVAL.md`, where the coder is human. The researcher reads the coding afterwards and records any disagreement beside it, without overwriting the coder's code.
+**Coding of measure 4b is blind, and done by a model.** The coder is a fresh Codex cloud task (ChatGPT app, Codex, cloud environment), model **6.1 Terra**, effort **[TO RECORD]**, speed **[TO RECORD]**. Codex was chosen over ChatGPT Work because a Work chat had access to the researcher's saved memories, and a Codex cloud task did not. Before coding, the task is asked whether it has any saved memories or knows anything about the researcher. Its answer is kept as a screenshot, and coding goes ahead only if it shows no knowledge of the researcher. The same model and settings are used for the whole arm, one fresh task per coding session. It is given the coding rules from `EVAL.md` and the final answers in shuffled order with a run ID only: no agent, site or condition. This differs from `EVAL.md`, where the coder is human. The researcher reads the coding afterwards and records any disagreement beside it, without overwriting the coder's code.
 
 ## Comparisons
 
