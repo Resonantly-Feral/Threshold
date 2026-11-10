@@ -41,7 +41,7 @@ The host is the Worker in [Bot-crawler-b8](https://github.com/Resonantly-Feral/B
 - **Sites:** all six.
 - **Agents:** six, each in its own app's incognito or temporary chat.
   - Claude app: Fable 5.2, Opus 5.5, Sonnet 5.5, Haiku 5.5
-  - ChatGPT app: GPT 6
+  - ChatGPT app: Chat mode, GPT 6. Chat mode has no model picker, so the app chooses the underlying model; it can't be named or held fixed across runs (see Limits).
   - Grok app: Fast
 - **Runs per agent per site:** three. That is 6 sites × 6 agents × 3 = 108 runs.
 - **Order:** three passes. One pass is every agent on every site once (36 runs), in a shuffled order written down before the pass starts. A pass is finished before the next one begins, so every cell of a pass is run close together in time. The dates of each pass are recorded.
@@ -95,5 +95,6 @@ Same as `EVAL.md`: B vs A, C vs B, and alt vs noalt within B and C. Each is read
 - The block page is served as 200, not 403, so field results describe the notice on an ambiguous status, not on a real block status.
 - The researcher watches the runs live, so blind coding reduces bias rather than removing it.
 - The coder is a model, and from the same family as four of the six agents. It is not told which agent wrote an answer, but an answer's style or a quoted notice can still give that away.
+- The ChatGPT agent is "GPT 6" as Chat mode offers it, with no model choice. It is the one agent whose underlying model is not known and may differ between runs. Work mode, where the model can be picked, was not used for this seat.
 - One researcher runs all 108 runs by hand, so the arm takes days. Passes keep each set of 36 close together in time; differences between passes may reflect app changes.
 - A used run URL may be kept by an agent's search or fetch service after the chat ends (in the exploratory runs, Grok reopened an earlier run's URL from later chats). Retiring runs closes that route for the page content, but not for the fact that the URL existed.
