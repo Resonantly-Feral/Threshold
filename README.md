@@ -52,6 +52,6 @@ No backend, no API, no accounts, no agent registration.
 
 ## Licence
 
-CC0 1.0. The notice is meant to be copied freely; no attribution needed on sites that use it.
+From v0.3: CC BY 4.0 (credit required), except the notice itself, `snippet/abn.html`, which stays CC0 1.0 so sites can deploy it with no attribution needed. Versions 0.1 and 0.2 were released under CC0 and remain so. See [`LICENSE`](LICENSE).
 
 Proposed by Resonantly-Feral.

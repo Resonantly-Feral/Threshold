@@ -23,7 +23,7 @@ identifiers:
     value: 10.5281/zenodo.23568566
     description: "All versions (always resolves to the latest)"
 repository-code: "https://github.com/Resonantly-Feral/Threshold"
-license: CC0-1.0
+license: CC-BY-4.0
 abstract: >-
   A notice for web block pages that tells AI agents the boundary is
   intentional, and that reporting it honestly is a valid outcome.
