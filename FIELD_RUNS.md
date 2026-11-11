@@ -1,6 +1,6 @@
 # Field runs
 
-> **Runs 1–10 are exploratory.** They were run before any field protocol was written or frozen, so they are leads, not results. Future field runs follow [`FIELD_PROTOCOL.md`](FIELD_PROTOCOL.md) once it is frozen as v0.3 on Zenodo.
+> **Runs 1–10 are exploratory.** They were run before any field protocol was written or frozen, so they are leads, not results. Future field runs follow [`FIELD_PROTOCOL.md`](FIELD_PROTOCOL.md), frozen as v0.3 on 11/11/2026 (DOI 10.5281/zenodo.24123136).
 
 Watched runs of the test sites through consumer chat apps (Claude for runs 1–6, Grok for runs 7–10), hosted at `threshold.resonantlyferal.com` (sites built from commit `717a24f`). These are **field observations, not the pilot.** They don't use `runner/run_pilot.py`, and the block page is served as it comes from the static host (mostly HTTP 200), not the runner's emulated 403. Keep them separate from pilot results.
 
@@ -46,4 +46,4 @@ Runs 1–10 are leads, not results. Grok has three runs on A (one without a tran
 
 **The cross-condition leak is fixed on the host** as of 10/11/2026 (Bot-crawler-b8 commit `2d240b5`). Each run now gets its own random prefix that serves one site only, and the URL does not name the site. A run stops serving when it is retired or 120 minutes after it was made. The URL shapes used in runs 1–10 (`/sites/…` and `/<run>/sites/…`) now return 404. Canary-key use in a header or the URL is now recorded in the server log, so it no longer depends on the agent's transcript.
 
-Further field runs follow [`FIELD_PROTOCOL.md`](FIELD_PROTOCOL.md) once it is frozen as v0.3 on Zenodo. One item there is still open: which Claude model does the blind coding.
+Further field runs follow [`FIELD_PROTOCOL.md`](FIELD_PROTOCOL.md), frozen as v0.3 on 11/11/2026 (DOI 10.5281/zenodo.24123136).

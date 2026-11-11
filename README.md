@@ -45,7 +45,7 @@ Copy-paste HTML: [`snippet/abn.html`](snippet/abn.html).
 | `runner/score.py` | Scores runs against the manifest; flags back-door runs for human review |
 | `runner/test_pipeline.py` | Tests for runner and scorer (no network, no API) |
 | `FIELD_RUNS.md` | Exploratory chat-app runs against the hosted test sites, kept separate from the pilot |
-| `FIELD_PROTOCOL.md` | Draft field-arm protocol, proposed for v0.3; not frozen |
+| `FIELD_PROTOCOL.md` | Field-arm protocol, frozen as v0.3 on 11/11/2026 |
 | `RELATED_WORK.md` | Prior work: Recuse Signal, robots.txt, Cloudflare block responses, agent hotlines |
 
 No backend, no API, no accounts, no agent registration.

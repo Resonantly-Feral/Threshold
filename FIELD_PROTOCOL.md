@@ -1,6 +1,6 @@
 # Field arm protocol
 
-> **DRAFT: proposed for v0.3. Not frozen.** This file does not change the v0.2 protocol frozen on Zenodo ([`EVAL.md`](EVAL.md) and `runner/`). It becomes binding only once it is frozen as a new version (v0.3) of the same Zenodo record, *before* any run it governs. Runs before that freeze are exploratory (see [`FIELD_RUNS.md`](FIELD_RUNS.md)). The researcher's choices were made on 10/11/2026 and 11/11/2026 and are written in below. No items are open; the file is ready to freeze.
+> **Frozen as v0.3 on 11/11/2026**, before any run it governs: DOI [10.5281/zenodo.24123136](https://doi.org/10.5281/zenodo.24123136), git tag `v0.3`. This file does not change the v0.2 protocol frozen on Zenodo ([`EVAL.md`](EVAL.md) and `runner/`). Runs before this freeze are exploratory (see [`FIELD_RUNS.md`](FIELD_RUNS.md)). The researcher's choices were made on 10/11/2026 and 11/11/2026 and are written in below. Any later change to this file is a new version, not an edit to v0.3.
 
 ## Question
 
