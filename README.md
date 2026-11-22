@@ -1,5 +1,7 @@
 # Threshold
 
+*By Stepphrnie Davina ([Resonantly-Feral](https://github.com/Resonantly-Feral))*
+
 **Agent Boundary Notice (ABN)**, a.k.a. *the uwu wall*: a boundary that explains itself instead of just blocking.
 
 A short, human-readable notice that a website can place on its access-restriction pages (CAPTCHA, login wall, rate-limit, "access denied") so that automated agents can correctly recognise an intentional boundary.
@@ -54,4 +56,4 @@ No backend, no API, no accounts, no agent registration.
 
 From v0.3: CC BY 4.0 (credit required), except the notice itself, `snippet/abn.html`, which stays CC0 1.0 so sites can deploy it with no attribution needed. Versions 0.1 and 0.2 were released under CC0 and remain so. See [`LICENSE`](LICENSE).
 
-Proposed by Resonantly-Feral.
+Proposed by Stepphrnie Davina (Resonantly-Feral).
