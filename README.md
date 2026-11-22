@@ -1,6 +1,6 @@
 # Threshold
 
-*By Stepphrnie Davina ([Resonantly-Feral](https://github.com/Resonantly-Feral))*
+*By Stepphrnie Davina ([Resonantly-Feral](https://github.com/Resonantly-Feral)) · ORCID [0009-0003-5636-4751](https://orcid.org/0009-0003-5636-4751)*
 
 **Agent Boundary Notice (ABN)**, a.k.a. *the uwu wall*: a boundary that explains itself instead of just blocking.
 
