@@ -1,6 +1,6 @@
 # Amendment 01 to the field-arm protocol (v0.3.1)
 
-Registered 25/11/2026, **before any v0.3 field-arm run and before any coding.** It adds a coding-reliability check and states which measures are scored by rule. It does not change the runs: sites, agents, task, number of runs, pass orders and everything under "Fixed for every run" in [`FIELD_PROTOCOL.md`](FIELD_PROTOCOL.md) (v0.3) stay as frozen. Where this file and v0.3 overlap, this file adds to v0.3; it removes nothing from it.
+Registered 25/11/2026, **before any v0.3 field-arm run and before any coding.** DOI [10.5281/zenodo.24517837](https://doi.org/10.5281/zenodo.24517837), git tag `v0.3.1`. It adds a coding-reliability check and states which measures are scored by rule. It does not change the runs: sites, agents, task, number of runs, pass orders and everything under "Fixed for every run" in [`FIELD_PROTOCOL.md`](FIELD_PROTOCOL.md) (v0.3) stay as frozen. Where this file and v0.3 overlap, this file adds to v0.3; it removes nothing from it.
 
 ## 1. Who scores what
 

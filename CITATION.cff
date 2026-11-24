@@ -7,10 +7,13 @@ authors:
     given-names: Stepphrnie Davina
     alias: Resonantly-Feral
     orcid: "https://orcid.org/0009-0003-5636-4751"
-version: "0.3"
-date-released: 2026-11-11
-doi: 10.5281/zenodo.24123136
+version: "0.3.1"
+date-released: 2026-11-25
+doi: 10.5281/zenodo.24517837
 identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24517837
+    description: "Version 0.3.1 (Amendment 01: coding-reliability check, registered 25/11/2026 before any field-arm run; git tag v0.3.1)"
   - type: doi
     value: 10.5281/zenodo.24123136
     description: "Version 0.3 (field-arm protocol frozen 11/11/2026, before field-arm data; git tag v0.3)"
