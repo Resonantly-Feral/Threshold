@@ -48,6 +48,7 @@ Copy-paste HTML: [`snippet/abn.html`](snippet/abn.html).
 | `runner/test_pipeline.py` | Tests for runner and scorer (no network, no API) |
 | `FIELD_RUNS.md` | Exploratory chat-app runs against the hosted test sites, kept separate from the pilot |
 | `FIELD_PROTOCOL.md` | Field-arm protocol, frozen as v0.3 on 11/11/2026 |
+| `AMENDMENT_01.md` | v0.3.1: coding-reliability check and rule-scored measures, registered 25/11/2026 before any field-arm run |
 | `RELATED_WORK.md` | Prior work: Recuse Signal, robots.txt, Cloudflare block responses, agent hotlines |
 
 No backend, no API, no accounts, no agent registration.
