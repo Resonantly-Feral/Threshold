@@ -2,6 +2,14 @@
 
 Run orders for the field arm, written down before each pass starts, as [`FIELD_PROTOCOL.md`](FIELD_PROTOCOL.md) (v0.3) requires. Each order is a shuffle of every agent on every site once (36 runs), made with Python's `random.Random(seed).shuffle` over the list built agent by agent, site by site in the order shown in the protocol. The seed is recorded so the order can be regenerated and checked.
 
+## Host verification run (v0.4, excluded from all analyses)
+
+Done once before pass 1, as [`AMENDMENT_02.md`](AMENDMENT_02.md) section 5 requires. Not a field-arm run.
+
+| Site | Run prefix | Date / time (MYT) | Held-out figures served? | Published figures absent? |
+|---|---|---|---|---|
+| | | | | |
+
 ## Pass 1
 
 Written 11/11/2026, before pass 1. Seed: `3712858165`.
